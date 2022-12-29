@@ -1,6 +1,6 @@
 // Baby weather app
 
-// let weather = prompt('How is the weather?')
+// let weather = prompt ('How is the weather?')
 
 // if (weather == 'rain') {
 //   console.log('Grab umbrella')
@@ -16,7 +16,7 @@ function sayMyName(name) {
 
 /**
 * Greet someone's name
-* @param {string} name The name of the person
+* @param string name The name of the person
 * @log output the greetings with name
 */
 function greeting(name) {
@@ -86,12 +86,34 @@ const introducer = (name, shirt) => {
 // console.log(introducer('Amirul', 'gray'))
 
 
-const double = (numbers) => {
-  let result = []
-  for (const num in numbers) {
-    result.push(num * 2)
+// const double = (numbers) => {
+//   let result = []
+//   for (const num in numbers) {
+//     result.push(num * 2)
+//   }
+//   return result
+// }
+
+// console.log(double([1, 2, 3, 4, 5, 6]))
+
+const howManyLetters = () => {
+  const phrase = 'hey, can you help me later in the evening?'
+
+  let result = 0
+  let alpha = 0
+
+  for (const letter of phrase) {
+    // console.log(letter)
+    // result = Number(letter) + 1
+    if (letter != ' ' && letter != ',' && letter != '?') {
+      letter.charCodeAt
+      alpha++
+    }
   }
-  return result
+  return phrase.length
+  // console.log('Result: ' + phrase.length)
+  // console.log('Alpha: ' + alpha)
 }
 
-console.log(double([1, 2, 3, 4, 5, 6]))
+console.log(howManyLetters())
+// console.log('test')
